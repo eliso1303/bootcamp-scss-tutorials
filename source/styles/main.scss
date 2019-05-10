@@ -29,6 +29,8 @@ body {
         line-height: 24px;
         padding: 8px 37px 9px;
         margin-right: 29px;
+        border:none;
+        cursor: pointer;
 
         &:last-child {
             margin-right:0;
@@ -51,6 +53,21 @@ body {
         &.xLarge {
             font-size: 36px;
             padding: 38px 102px 39px;
+        }
+
+        &.round {
+            &-3 {
+                border-radius:3px;
+            }
+            &-7 {
+                border-radius:7px;
+            }
+            &-12 {
+                border-radius:12px;
+            }
+            &-20 {
+                border-radius:20px;
+            }
         }
     }
 }
