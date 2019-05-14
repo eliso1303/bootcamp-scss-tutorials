@@ -27,26 +27,19 @@
         @include size(26px, 26px, 95px, 30px, 95px);
     }
 
-    &.xLarge {
+    &.x-large {
         @include size(36px, 38px, 102px, 39px, 102px);
     }
 
     &.round {
 
-        &-3 {
-            border-radius: 3px;
-        }
+        $rounds: (3, 7, 12, 20);
 
-        &-7 {
-            border-radius: 7px;
-        }
+        @each $round in $rounds {
 
-        &-12 {
-            border-radius: 12px;
-        }
-
-        &-20 {
-            border-radius: 20px;
+            &-#{$round} {
+                border-radius: $round + px;
+            }
         }
     }
 
